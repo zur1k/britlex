@@ -1,0 +1,28 @@
+.header {
+	&__top {
+		padding: 36px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__nav-list {
+		display: flex;
+	}
+	&__nav-item + .header__nav-item {
+		margin-left: 32px;
+	}
+	&__nav-btn {
+		padding: 14px 16px 14px 16px;
+		a {
+			line-height: 19.36px;
+		}
+	}
+	&__logo {
+		font-family: "Montserrat", sans-serif;
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 39px;
+		text-align: left;
+		color: $dark-color;
+	}
+}

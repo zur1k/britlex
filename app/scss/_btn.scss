@@ -1,0 +1,25 @@
+.btn {
+	padding: 16px 32px;
+	background-color: $btn-color;
+
+	font-weight: 500;
+	border-radius: 4px;
+	transition: all 0.3s ease;
+	display: inline-block;
+	font-size: 16px;
+
+	a {
+		font-family: "Inter", sans-serif;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 0;
+		line-height: 19.36px;
+		letter-spacing: 0em;
+		text-align: left;
+		color: $white;
+		max-width: 165px;
+	}
+	&:hover {
+		background-color: rgb(197, 177, 177);
+	}
+}
