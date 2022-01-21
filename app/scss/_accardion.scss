@@ -1,0 +1,41 @@
+.tab input,
+.tab-content {
+	display: none;
+}
+:checked ~ tab-content {
+	display: block;
+}
+.tab-title::after {
+	background: #ffece2;
+	text-align: center;
+	content: url(../images/arrow-down.svg);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+}
+:checked + .tab-title::after {
+	content: url(../images/arrow-top.svg);
+	background: #ff620a;
+}
+.tab-title {
+	cursor: pointer;
+	position: relative;
+}
+
+.tab input,
+.tab-content {
+	display: none;
+}
+
+.tab-title::after {
+	content: url(../images/arrow-down.svg);
+}
+
+.tab :checked + .tab-title::after {
+	content: url(../images/arrow-top.svg);
+}
+.tab :checked ~ .tab-content {
+	display: block; /* Показываем содержимое */
+}
