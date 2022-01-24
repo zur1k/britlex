@@ -1,31 +1,53 @@
 .reservation {
 	padding: 80px 0;
 	text-align: center;
+	@include breakpoint(768) {
+		padding: 40px 0;
+	}
 	//top
 	&-top {
 		max-width: 588px;
 		margin: 0 auto;
 		padding-bottom: 56px;
+		@include breakpoint(768) {
+			padding-bottom: 20px;
+		}
+		@include breakpoint(576) {
+			padding-bottom: 0;
+		}
 	}
 	&-top__title {
 	}
 	&-top__text {
 		margin-bottom: 32px;
+		@include breakpoint(576) {
+			margin-bottom: 20px;
+		}
 	}
 	&-top__btn {
 		margin-bottom: 32px;
+		@include breakpoint(576) {
+			margin-bottom: 20px;
+		}
 	}
 	//body
 	&-body {
 		display: flex;
 		justify-content: space-between;
 		text-align: left;
+		@include breakpoint(576) {
+			text-align: center;
+			flex-direction: column;
+		}
+		@include breakpoint(401) {
+			text-align: left;
+			flex-direction: column;
+		}
 	}
 	&-body__item {
 		flex: 0 0 calc(100% / 3 - 16px);
 	}
-	&-body__content {
-	}
+
 	&-body__title {
 		font-family: Montserrat;
 		font-size: 24px;
@@ -35,9 +57,17 @@
 		letter-spacing: 0em;
 		padding-top: 32px;
 		margin-bottom: 16px;
+		@include breakpoint(576) {
+			padding-top: 10px;
+		}
 	}
 	&-body__text {
 		margin-bottom: 32px;
+		@include breakpoint(576) {
+			margin: 0 auto;
+			margin-bottom: 10px;
+			max-width: 360px;
+		}
 	}
 	&-body__btn {
 		color: $link-color;
@@ -59,6 +89,17 @@
 			top: 50%;
 			right: 0;
 			transform: translateY(-50%);
+			@include breakpoint(401) {
+				right: 20%;
+			}
+		}
+		@include breakpoint(576) {
+			margin-bottom: 25px;
+		}
+	}
+	&-body__image {
+		img {
+			margin: 0 auto;
 		}
 	}
 }

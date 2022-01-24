@@ -25,4 +25,10 @@
 		text-align: left;
 		color: $dark-color;
 	}
+	&__nav,
+	&__nav-btn {
+		@include breakpoint(992) {
+			display: none;
+		}
+	}
 }

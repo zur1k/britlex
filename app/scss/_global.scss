@@ -7,6 +7,10 @@ body {
 	line-height: 27px;
 	font-weight: 400;
 	color: $text-color;
+	@include breakpoint(576) {
+		font-size: 14px;
+		line-height: 18px;
+	}
 }
 
 .wrapper {
@@ -36,4 +40,21 @@ body {
 	letter-spacing: -0.01em;
 	color: $dark-color;
 	margin-bottom: 24px;
+	@include breakpoint(992) {
+		margin-bottom: 18px;
+		font-size: 30px;
+	}
+	@include breakpoint(768) {
+		font-size: 22px;
+	}
+	@include breakpoint(686) {
+		margin-bottom: 10px;
+	}
+	@include breakpoint(401) {
+		line-height: 24px;
+	}
+}
+
+.none {
+	display: none;
 }

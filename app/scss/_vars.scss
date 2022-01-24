@@ -5,3 +5,47 @@ $white: #fff;
 $btn-color: #0e1734;
 $link-color: #424f7b;
 $footer-fontcolor: #d9dbde;
+
+@mixin breakpoint($point) {
+	@if $point == 1580 {
+		@media (max-width: 1580px) {
+			@content;
+		}
+	} @else if $point == 1400 {
+		@media (max-width: 1400px) {
+			@content;
+		}
+	} @else if $point == 1299 {
+		@media (max-width: 1299px) {
+			@content;
+		}
+	} @else if $point == 1200 {
+		@media (max-width: 1200px) {
+			@content;
+		}
+	} @else if $point == 992 {
+		@media (max-width: 992px) {
+			@content;
+		}
+	} @else if $point == 768 {
+		@media (max-width: 768px) {
+			@content;
+		}
+	} @else if $point == 686 {
+		@media (max-width: 868px) {
+			@content;
+		}
+	} @else if $point == 576 {
+		@media (max-width: 576px) {
+			@content;
+		}
+	} @else if $point == 401 {
+		@media (max-width: 401px) {
+			@content;
+		}
+	} @else if $point == min {
+		@media (min-width: 1201px) {
+			@content;
+		}
+	}
+}
