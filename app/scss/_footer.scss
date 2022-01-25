@@ -17,7 +17,8 @@
 	}
 	&__logo {
 		margin-bottom: 13px;
-		a {
+		a,
+		a:visited {
 			color: $white;
 			font-family: "Montserrat", sans-serif;
 			font-size: 32px;

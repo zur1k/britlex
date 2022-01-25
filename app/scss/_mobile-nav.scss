@@ -44,5 +44,8 @@
 	font-weight: 600;
 	line-height: 39px;
 	text-align: left;
-	color: $dark-color;
+	a,
+	a:visited {
+		color: $dark-color;
+	}
 }
