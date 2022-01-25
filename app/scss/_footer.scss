@@ -3,6 +3,7 @@
 	padding: 60px 0;
 	@include breakpoint(768) {
 		padding-bottom: 60px;
+		background-color: greenyellow;
 	}
 
 	&__wrapper {
