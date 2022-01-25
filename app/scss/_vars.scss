@@ -39,6 +39,10 @@ $footer-fontcolor: #d9dbde;
 		@media (max-width: 576px) {
 			@content;
 		}
+	} @else if $point == 496 {
+		@media (max-width: 496px) {
+			@content;
+		}
 	} @else if $point == 401 {
 		@media (max-width: 401px) {
 			@content;

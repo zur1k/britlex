@@ -1,15 +1,19 @@
 .footer {
 	background-color: #0b265a;
-	padding-bottom: 120px;
-	a {
-		//color: $footer-fontcolor;
+	padding: 60px 0;
+	@include breakpoint(768) {
+		padding-bottom: 60px;
 	}
+
 	&__wrapper {
-		padding-top: 120px;
 		display: flex;
+		align-items: baseline;
 	}
 	&-left {
 		flex: 0 0 50%;
+		@include breakpoint(768) {
+			flex: 0 0 auto;
+		}
 	}
 	&__logo {
 		margin-bottom: 13px;
@@ -31,18 +35,54 @@
 		margin-bottom: 36px;
 		max-width: 186px;
 		padding-right: 15px;
+		@include breakpoint(576) {
+			margin-bottom: 10px;
+		}
 	}
 	&__social {
 		display: flex;
+		@include breakpoint(576) {
+			align-items: baseline;
+			justify-content: space-between;
+			width: 100%;
+			max-width: 140px;
+		}
 		li + li {
 			margin-left: 23px;
+			@include breakpoint(576) {
+				margin-left: 0;
+				margin-top: 15px;
+			}
 		}
 	}
 	// right
 	&-right {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		width: 100%;
+		@include breakpoint(576) {
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+		}
+		@include breakpoint(496) {
+			justify-content: center;
+		}
+	}
+	&-right__column {
+		@include breakpoint(576) {
+			max-width: 140px;
+			width: 100%;
+			padding-right: 15px;
+			margin-bottom: 15px;
+		}
+	}
+	&-right__column + .footer-right__column {
+		@include breakpoint(576) {
+			margin-bottom: 0;
+		}
+		@include breakpoint(496) {
+			margin-bottom: 15px;
+		}
 	}
 	&-right__column-title {
 		color: $white;
@@ -51,9 +91,15 @@
 		line-height: 19px;
 		letter-spacing: 0.01em;
 		margin-bottom: 18px;
+		@include breakpoint(576) {
+			margin-bottom: 5px;
+		}
 	}
 	&-right__column-item + .footer-right__column-item {
 		margin-top: 18px;
+		@include breakpoint(768) {
+			margin-top: 5px;
+		}
 	}
 	&-right__column-item {
 		a {
@@ -62,4 +108,7 @@
 			line-height: 19px;
 		}
 	}
+}
+@include breakpoint(768) {
+	flex-direction: column;
 }
