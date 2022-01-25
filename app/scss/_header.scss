@@ -29,14 +29,14 @@
 		color: $text-color;
 	}
 	&__logo {
-		font-family: "Montserrat", sans-serif;
-		font-size: 32px;
-		font-weight: 600;
-		line-height: 39px;
-		text-align: left;
 		a,
 		a:visited {
 			color: $dark-color;
+			font-family: "Montserrat", sans-serif;
+			font-size: 32px;
+			font-weight: 600;
+			line-height: 39px;
+			text-align: left;
 		}
 	}
 	&__nav,
