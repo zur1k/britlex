@@ -18,8 +18,11 @@
 	&__list {
 		font-size: 22px;
 		.mobile-nav__element + .mobile-nav__element {
-			margin-top: 20px;
+			margin-top: 25px;
 		}
+	}
+	&__link {
+		color: $text-color;
 	}
 }
 .mobile-nav.active {

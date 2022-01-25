@@ -9,29 +9,29 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@600&display=swap"
     rel="stylesheet">
-  <title>Document</title>
+  <title>My project</title>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-  <header class="header">
+  <header class="header" id="hero">
     <div class="container">
       <div class="header__top">
         <div class="header__logo">
-          <a href="#">Cootels</a>
+          <a href="#hero">Cootels</a>
         </div>
-        <nav class="header__nav">
+        <nav class="header__nav nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Rooms</a>
+              <a class="header__nav-link" href="#rooms">Rooms</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Reservation</a>
+              <a class="header__nav-link" href="#reservation">Reservation</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Contacs</a>
+              <a class="header__nav-link" href="#contacts ">Contacs</a>
             </li>
           </ul>
         </nav>
@@ -45,22 +45,22 @@
     </div>
   </header>
   <div class="mobile-nav">
-    <a class="mobile-nav-logo" href="#">Cootels</a>
+    <a class="mobile-nav-logo" href="#hero">Cootels</a>
 
-    <nav id="mobile-nav" class="nav">
+    <nav id="mobile-nav nav" class="nav">
       <ul class="mobile-nav__list">
-        <li class="mobile-nav__element"><a class="mobile-nav__link" href="#home">Rooms</a></li>
-        <li class="mobile-nav__element"><a class="mobile-nav__link" href="#solution">Reservation</a></li>
-        <li class="mobile-nav__element"><a class="mobile-nav__link" href="#community">Contacs</a></li>
+        <li class="mobile-nav__element"><a class="mobile-nav__link" href="#rooms">Rooms</a></li>
+        <li class="mobile-nav__element"><a class="mobile-nav__link" href="#reservation">Reservation</a></li>
+        <li class="mobile-nav__element"><a class="mobile-nav__link" href="#contacts">Contacs</a></li>
       </ul>
     </nav>
     <div class="mobile-login btn">
       <a href="#">Get Started</a>
     </div>
   </div>
-  <main class="main ">
+  <main class="main">
     <section>
-      <div class="hero ">
+      <div class="hero">
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero__content">
@@ -86,7 +86,6 @@
       <div class="about">
         <div class="container">
           <div class="about__wrapper">
-
             <div class="about__image">
               <img src="images/aboutus.jpg" alt="house in the forest">
             </div>
@@ -104,10 +103,7 @@
               <div class="about__btn btn">
                 <a href="#">Learn More</a>
               </div>
-
             </div>
-
-
           </div>
         </div>
       </div>
@@ -142,7 +138,7 @@
       </div>
     </section>
     <section>
-      <div class="reservation">
+      <div class="reservation" id="reservation">
         <div class="container">
           <div class="reservation-top">
             <h2 class="reservation-top__title title">Many Rooms to Choose</h2>
@@ -170,7 +166,7 @@
                 <img src="images/double-room.jpg" alt="double-room">
               </div>
               <div class="reservation-body__content">
-                <h3 class="reservation-body__title title">Single Room</h3>
+                <h3 class="reservation-body__title title">Doubele Room</h3>
                 <p class="reservation-body__text">Best for a brave lone wolf who need comfort and quiet quality time,
                   but you still have a chance to meet others.</p>
               </div>
@@ -181,7 +177,7 @@
                 <img src="images/cootage.jpg" alt="cootage">
               </div>
               <div class="reservation-body__content">
-                <h3 class="reservation-body__title title">Single Room</h3>
+                <h3 class="reservation-body__title title">Cootage</h3>
                 <p class="reservation-body__text">Best for a brave lone wolf who need comfort and quiet quality time,
                   but you still have a chance to meet others.</p>
               </div>
@@ -193,10 +189,9 @@
       </div>
     </section>
     <srction>
-      <div class="room">
+      <div class="room" id="rooms">
         <div class="container">
           <div class="room__wrapper">
-
             <div class="room__content">
               <div class="room__content-heading">
                 <h4 class="room__content-suptitle">Start your journey!</h4>
@@ -296,11 +291,11 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="contacts">
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer-left">
-          <div class="footer__logo"><a href="#">Cootels</a></div>
+          <div class="footer__logo"><a href="#hero">Cootels</a></div>
           <div class="footer__offer">Your Best Private Hideway From Crowd. Back to Nature.</div>
           <ul class="footer__social">
             <li>

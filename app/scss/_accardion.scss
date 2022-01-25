@@ -16,6 +16,10 @@
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
+	@include breakpoint(401) {
+		right: -10%;
+		transform: translateY(-45%);
+	}
 }
 :checked + .tab-title::after {
 	content: url(../images/arrow-top.svg);

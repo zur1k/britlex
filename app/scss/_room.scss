@@ -67,6 +67,9 @@
 	&__content-heading {
 		padding-top: 82px;
 		margin-bottom: 32px;
+		@include breakpoint(992) {
+			padding-top: 50px;
+		}
 		@include breakpoint(768) {
 			padding-top: 0;
 		}
@@ -92,7 +95,8 @@
 			margin-bottom: 35px;
 		}
 	}
-	&__content-btn {
+	&__content-btn,
+	&__content-btn:visited {
 		color: $white;
 	}
 }
@@ -125,7 +129,8 @@
 			font-size: 20px;
 		}
 		@include breakpoint(401) {
-			font-size: 15px;
+			padding-right: 10%;
+			max-width: 90%;
 		}
 	}
 	&__content {

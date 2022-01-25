@@ -10,9 +10,8 @@ mobileNavButton.addEventListener('click', function () {
 
 })
 
-
-$(".mobile-nav__link").on("click", function (event) {
-	//
+// no scroll in burger menu
+$(".mobile-nav__link").on("click", function () {
 
 	$(mobileNavIcon).toggleClass("active");
 	$(mobileNav).toggleClass("active");
@@ -25,4 +24,14 @@ $(document).ready(function () {
 		arrows: false,
 		dots: true
 	});
+});
+
+
+// ------------------------  smooth scroll   -------------------------
+
+$(".nav").on("click", "a", function (event) {
+	event.preventDefault();
+	var id = $(this).attr('href'),
+		top = $(id).offset().top;
+	$('body,html').animate({ scrollTop: top }, 1500);
 });

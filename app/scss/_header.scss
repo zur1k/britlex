@@ -1,4 +1,12 @@
 .header {
+	@include breakpoint(992) {
+		position: fixed;
+		background-color: $white;
+		left: 0;
+		right: 0;
+		border-bottom: 1px solid $text-color;
+		z-index: 1000;
+	}
 	&__top {
 		padding: 36px 0;
 		display: flex;
@@ -16,6 +24,9 @@
 		a {
 			line-height: 19.36px;
 		}
+	}
+	&__nav-link {
+		color: $text-color;
 	}
 	&__logo {
 		font-family: "Montserrat", sans-serif;
